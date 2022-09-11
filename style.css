@@ -104,7 +104,7 @@ body{
  100%{margin-left: 0;}
 }
 /*about css*/
-.H1{b
+.H1{
       transform: translate(7%, 45%);
       font-family: sans-serif;
      
@@ -120,8 +120,7 @@ body{
       font-weight: bold;
       font-family: monospace;
       letter-spacing: 7px;
-      cursor: pointer
-
+      cursor: pointer;
     }
  
 .link span{
@@ -153,15 +152,31 @@ body{
   left: 15%;
   z-index: -1;
   margin-right: -1%;
-  margin-top: 50%;
+  margin-top: 48%;
   width: 30%;
+  opacity: 0.7;
+  animation: bgimg2 7s 1;
+  animation-delay: 5s;
 }
-.bgimg2{
-      object-fit: cover;
-      box-shadow: 7px 7px 10px 7px #303030;
-      border-radius: 5%;
-    }
-    .about{
+ @keyframes bgimg2{
+    0%{margin-left: -50%; opacity: 0;}
+    25%{opacity: 0.1;}
+    50%{opacity: 0.3;}
+    75%{opacity: 0.5; width: 40%;}
+    100%{margin-right: 0; opacity: 0.7;}
+  }
+  .nlp, .Full-Stack{
+    animation: nlp 7s 1;
+    animation-delay: 2s;
+  }
+   @keyframes nlp{
+    0%{margin-left: -50%; opacity: 0;}
+    25%{opacity: 0.1;}
+    50%{opacity: 0.3;}
+    75%{opacity: 0.5; width: 40%;}
+    100%{margin-right: 0; opacity: 0.7;}
+  }
+.about{
       position: relative;
       margin-left: 47%;
       margin-top: 53%;
@@ -408,4 +423,53 @@ i:hover{
     100% {
         max-width: 0;
     }
+}
+.H11{
+  display: none;
+}
+.cp2{
+  display: none;
+}
+ .cont .start1{
+  display: none;
+ }
+ .email2{
+     display: none;
+  }
+/*media query*/
+@media screen and (max-width: 1500px){
+.H1{
+   display: none;
+}
+.p2, .p3, .p4, .p5, .p6, .p7{
+  font-size: 19px;
+}
+.work p{
+  display: none;
+}
+.work .s1{
+  display: block;
+ }
+ .H11{
+  display: block;
+ }
+ .cont .start{
+  display: none;
+ }
+ .cont .start1{
+  display: block;
+ }
+ .cp1{
+  display: none;
+ }
+.cp2{
+  display: block;
+  font-size: 17px;
+ }
+  .email{
+     display: none;
+  }
+   .email2{
+     display: block;
+  }
 }
