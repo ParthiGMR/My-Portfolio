@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Contact</title>
+	<script type="text/javascript">
+    function send(){
+  var name = document.getElementById("name").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  if(name.length < 5){
+    alert("Please Enter valid Name")
+    return false;
+  }
+ if(isNaN(phone) || phone.length != 10){
+    alert("Please Enter valid Phone number")
+    return false;
+  }
+  if(email.length < 6){
+    alert("Please Enter Email")
+    return false;
+  }
+   if(message.length <= 20){
+    alert("Please Enter atleast 20 Characters")
+    return false;
+  }
+  alert("Form Submitted Successfully!");
+  return true;
+}
+	</script>
+</head>
+<body style="color: white;">
+	<a href="index.html" class="link" id="Link" style="color: skyblue; margin-top: -4%;"><span>Return</span><span>Home</span></a>
+	<div class="cont">
+	<h2 class="start" style="font-family: 'Poppins', sans-serif; font-size: 75px; margin-left:15%; margin-top:15%">
+        <span class="end1">Let's make</span> <span class="middle1">something</span>
+        <span class="middle2"></span><span class="end2"> great!</span>
+    </h2>
+	</div>
+    <div class="contact" style="font-family: 'Poppins', sans-serif;">
+	<b class="start" style="font-family: 'Poppins', sans-serif; font-size: 30px;">
+        <span class="end1">Con</span><span class="middle1">tact</span>
+        <span class="middle2"></span><span class="end2">.</span>
+    </b>
+	<p class="cp1" style="font-size: 19px;">I'm seeking out opportunities to collaborate with companies / agencies /<br> individuals,not just work for them. I want to bring my collective design<br>experience to the table where we can work together to solve real business-<br>problems in a way thst optimizes all of our respective experience and<br>knowledge.<br><br>I want to avoid subjective pissing-marches, and favor open-minded<br>collaborators where egos are out of the equation. If that all sounds about<br>right, then lets for chat about how we can work together.<br><br></p>
+	<b style="font-size: 18px;">Get in touch or shoot me an email directly on<b style="color: skyblue;"> parthieee1999024@gmail.com</b></b>
+</div>
+<div id="error_message">
+   
+  </div>
+<div class="cntdetails" style="margin-left: 25%; margin-top: 3%;">
+ <input type="text" placeholder="Name" id="name" class="cnt1">
+        <br><br><br>
+ <input type="text" placeholder="Phone" id="phone" class="cnt1">
+        <br><br><br>
+ <input type="text" placeholder="Email" id="email" class="cnt1">
+        <br><br><br>
+ <textarea placeholder="Message" id="message" class="cnt1"></textarea>
+ </div><br><br><br>
+ <button class="btn" onclick="send()">
+  <span class="btn-label">Send</span>
+</button>
+<footer class="ftr1">
+    <a href=""><i class="fa fa-twitter" style="font-size:40px; color: skyblue; padding-left: 30%; padding-top: 1%;"></i></a>
+    <a href=""><i class="fa fa-instagram" style="font-size:40px; color: skyblue; padding-left: 10%;"></i></a>
+	<a href="https://github.com/ParthiGMR"><i class="fa fa-github" style="font-size:40px; color: skyblue; padding-left: 10%;"></i></a>
+    <a href=""><i class="fa fa-linkedin" style="font-size:40px; color: skyblue; padding-left: 10%;"></i></a>
+</footer>
+</body>
+</html>
