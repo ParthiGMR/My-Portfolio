@@ -437,12 +437,11 @@ i:hover{
      display: none;
   }
    }
-.things1{
-     display: none;
-  }
-  .work .s1{
+@media screen and (max-width: 2000px){
+.s1{
   display: none;
  }
+}
 /*media query*/
 @media screen and (max-width: 1500px){
 .H1{
