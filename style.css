@@ -436,6 +436,12 @@ i:hover{
  .email2{
      display: none;
   }
+.work .things1{
+	display: none;
+}
+.work .s1{
+	display: none;
+}
 /*media query*/
 @media screen and (max-width: 1500px){
 .H1{
@@ -472,4 +478,5 @@ i:hover{
    .email2{
      display: block;
   }
+
 }
